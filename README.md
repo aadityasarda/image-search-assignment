@@ -30,6 +30,7 @@ NumPy, OpenCV, Pillow
 
 📁 Folder Structure
 
+```text
 backend/
 ├── main.py                  
 ├── config.py                
@@ -38,7 +39,7 @@ backend/
 │   ├── preprocess.py        
 │   ├── extractor.py         
 │   ├── chroma_loader.py     
-│   └── search.py            
+│   └── search.py             
 ├── services/
 │   ├── preprocess_service.py
 │   ├── extract_service.py
@@ -51,7 +52,7 @@ backend/
 └── data/
     ├── resized/             
     └── features/            
-
+```
     
 🔄 API Flow
 
@@ -66,7 +67,9 @@ Search → upload a query image, get top-N similar matches
 🛋️ Setup & Installation
 
 git clone https://github.com/yourusername/image-search-backend
+
 cd backend
+
 uvicorn main:app --reload
 
 📡 API Endpoints
