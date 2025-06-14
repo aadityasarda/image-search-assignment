@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+chromadb
+tf-keras
+numpy
+pillow
+opencv-python
+tqdm
+python-multipart
