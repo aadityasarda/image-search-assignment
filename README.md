@@ -145,4 +145,6 @@ Endpoint              Method     Description
 ```
 
 🖼️ Screenshots
-![Homepage] (C:\Users\Vinnu\Pictures\Screenshots\Results.png)
+![Homepage] (./screenshots/HomePage.png)
+![UploadImage] (./screenshots/UploadImage.png)
+![Results] (./screenshots/Results.png)
