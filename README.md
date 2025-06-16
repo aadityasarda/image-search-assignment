@@ -145,6 +145,8 @@ Endpoint              Method     Description
 ```
 
 🖼️ Screenshots
-![Homepage] (./screenshots/HomePage.png)
-![UploadImage] (./screenshots/UploadImage.png)
-![Results] (./screenshots/Results.png)
+![Homepage](./screenshots/HomePage.png)
+
+![UploadImage](./screenshots/UploadImage.png)
+
+![Results](./screenshots/Results.png)
