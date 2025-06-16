@@ -1,0 +1,53 @@
+.results-wrapper {
+  padding: 30px;
+  text-align: center;
+}
+
+.result-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.result-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 10px;
+  background-color: #fafafa;
+}
+
+.result-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.label {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.score {
+  font-size: 13px;
+  color: #555;
+}
+
+.pagination {
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 6px 10px;
+  border: 1px solid #999;
+  background: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.pagination .active {
+  background: #333;
+  color: white;
+}
