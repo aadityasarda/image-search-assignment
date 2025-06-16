@@ -144,3 +144,5 @@ Endpoint              Method     Description
 /api/search            POST      Upload query image and search
 ```
 
+🖼️ Screenshots
+![Homepage] (C:\Users\Vinnu\Pictures\Screenshots\Results.png)
