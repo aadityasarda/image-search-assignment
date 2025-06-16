@@ -12,7 +12,18 @@ ChromaDB for fast vector similarity search (cosine distance)
 FastAPI for the backend API
 ```
 
-🛠️ Tech Stack
+🛠️ Tech Stack of Frontend
+
+```text
+React
+css
+
+Prerequisites to use react
+->Node.js(v16 or later)
+->npm(comes with the node)
+```
+
+🛠️ Tech Stack of Backend
 
 ```text
 Python 3.12.11 #Don't use the currect python version as tensorflow is not supported by the latest versions     
@@ -24,7 +35,44 @@ ChromaDB
 NumPy, OpenCV, Pillow
 ```
 
-📁 Folder Structure
+📁 Folder Structure of Frontend
+
+```text
+frontend_image_search/
+├── public/
+│   └── index.html
+│
+├── src/
+│   ├── assets/                  
+│   │   └── test_images          #there are 3-3 test images for each class
+│
+│   ├── components/              # UI components
+│   │   ├── AnimatedSearchBox.jsx
+│   │   ├── AnimatedSearchBox.css
+│   │   ├── Header.jsx
+│   │   ├── Header.css
+│   │   ├── ResultGrid.jsx
+│   │   ├── ResultGrid.css
+│   │   ├── Loader.jsx
+│   │   └── Loader.css
+│
+│   ├── pages/                   # Page-level components
+│   │   └── Home.jsx
+│
+│   ├── services/                # API integration logic
+│   │   └── api.js
+│
+│   ├── App.js                   # App entry component
+│   ├── App.css                  # (optional) Global styles
+│   ├── index.js                 # ReactDOM entry point
+│   └── index.css                # Global resets and base styling
+│
+├── package.json
+├── package-lock.json
+└── README.md
+```
+
+📁 Folder Structure of Backend
 
 ```text
 backend/
@@ -59,12 +107,30 @@ Load ChromaDB → load embeddings into ChromaDB
 Search → upload a query image, get top-N similar matches
 ```
 
-🛋️ Setup & Installation
+🛋️ Setup & Installation of backend
 
 ```text
-git clone https://github.com/yourusername/image-search-backend
+git clone https://github.com/aadityasarda/image-search-assignment
 cd backend
 uvicorn main:app --reload
+
+NOTE - when you clone this repo you will get the .npy files and because of that you need to POST all apis you need to POST one api which is /api/load-chroma you can also visit http://127.0.0.1:8000/docs and choose
+/api/load-chroma -> Try it out -> execute 
+
+Result
+You will find that all the embeddings are successfully loaded in the chromadb
+```
+
+🛋️ Setup & Installation of frontend
+
+```text
+git clone https://github.com/aadityasarda/image-search-assignment
+cd frontend_image_Search
+npm install  -> to downlaod the nod modules
+npm axios -> for backend integration
+npm start -> if you find errors then remove the node modules and again run the insatll command
+
+NOTE - Make sure your backend should be in running state 
 ```
 
 📡 API Endpoints
@@ -77,3 +143,4 @@ Endpoint              Method     Description
 /api/load-chroma       POST      Load embeddings into ChromaDB (every server start)
 /api/search            POST      Upload query image and search
 ```
+
