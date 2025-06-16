@@ -145,8 +145,21 @@ Endpoint              Method     Description
 ```
 
 🖼️ Screenshots
+
+```text
+Homepage
+```
+
 ![Homepage](./screenshots/HomePage.png)
 
+```text
+UploadImage
+```
+
 ![UploadImage](./screenshots/UploadImage.png)
+
+```text
+Results
+```
 
 ![Results](./screenshots/Results.png)
