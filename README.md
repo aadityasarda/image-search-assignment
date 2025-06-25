@@ -1,6 +1,6 @@
 🔍 AI-Powered Image Similarity Search
 ```text
-EfficientNetB0 + ChromaDB + FastAPI | Find visually similar images instantly.
+EfficientNetB0 + ChromaDB + Cosine | Find visually similar images instantly.
 ```
 
 🎓 About
